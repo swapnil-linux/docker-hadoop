@@ -1,7 +1,7 @@
-FROM    centos:7
+FROM centos:7
 
 MAINTAINER Swapnil Jain <swapnil@linux.com>
-LABEL description="Cloudera CDH 5.9 Base Docker Image"
+LABEL description="Cloudera Hadoop 5.9 Base Docker Image"
 
 RUN yum -y install epel-release java-1.8.0-openjdk-devel && rm -rf /var/cache/yum/* && yum clean all
 ENV JAVA_HOME /usr/lib/jvm/java-openjdk
